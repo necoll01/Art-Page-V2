@@ -1,0 +1,22 @@
+ 
+ body{
+font: normal 16px/1.5 sans-serif;
+ }
+
+ img{
+     max-width: 100%;
+ }
+
+ .mediums {
+
+    display: flex;
+ }
+
+ .wet {
+     flex: 50%;
+ }
+
+ .dry {
+flex: 50% 
+
+}
