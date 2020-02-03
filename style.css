@@ -1,22 +1,44 @@
  
- body{
-font: normal 16px/1.5 sans-serif;
+
+/* General styling for all viewports */
+
+body{
+font: normal 16px/1.5 Bookman;
  }
 
  img{
      max-width: 100%;
  }
 
- .mediums {
+ul {
+    list-style-type: none;
+}
+.medium {
+    display: block;
+    background: #fff;
+    border: solid 1px white;
+    width: 18em;
+    margin: 4em 0;
+    box-shadow: 0 .2em .5em rgba(0,0,0,.3);
+}
 
-    display: flex;
- }
+ .media ul {
+    padding: 0 1em;
+    margin: 0;
+}
 
- .wet {
-     flex: 50%;
- }
+.medium img {
+    display: block;
+    margin: 0 auto;
+}
 
- .dry {
-flex: 50% 
+/* remove fig caption and replace with h3 and paragraph elements. */
+.medium figcaption {
+    max-width: 20em;
+    margin: 0 auto;
 
 }
+
+/* mobile viewport */
+
+@media all and (max-width: 500px) {}
