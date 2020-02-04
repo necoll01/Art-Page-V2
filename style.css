@@ -15,7 +15,7 @@ ul {
 }
 .medium {
     display: block;
-    background: #fff;
+    background: #ffffff;
     border: solid 1px white;
     width: 18em;
     margin: 4em 0;
@@ -27,17 +27,15 @@ ul {
     margin: 0;
 }
 
+
+
 .medium img {
     display: block;
     margin: 0 auto;
 }
 
-/* remove fig caption and replace with h3 and paragraph elements. */
-.medium figcaption {
-    max-width: 20em;
-    margin: 0 auto;
 
-}
+/* changing hyperlink behaviors */ 
 
 /* mobile viewport */
 
