@@ -1,42 +1,115 @@
+ /* General styling for all viewports */
  
-
-/* General styling for all viewports */
-
-body{
-font: normal 16px/1.5 Bookman;
+ a:link {
+     color: #238b96;
  }
-
- img{
+ /* visited */
+ 
+ a:visited {
+     color: darkblue;
+ }
+ /* mouse over link */
+ 
+ a:hover {
+     text-decoration: underline;
+ }
+ /* selected link */
+ 
+ a:active {
+     color: #238b96;
+ }
+ 
+ header {
+     font-size: 1em;
+     color: black;
+     text-align: center;
+     border: double;
+ }
+ 
+ .start-here a {
+     color: black;
+ }
+ 
+ .resources a {
+     text-decoration-line: none;
+ }
+ 
+ .page-content {
+     max-width: 600px;
+     margin-right: auto;
+     margin-left: auto;
+ }
+ 
+ body {
+     font: normal 16px/1.5 Bookman;
+ }
+ 
+ img {
      max-width: 100%;
  }
-
-ul {
-    list-style-type: none;
-}
-.medium {
-    display: block;
-    background: #ffffff;
-    border: solid 1px white;
-    width: 18em;
-    margin: 4em 0;
-    box-shadow: 0 .2em .5em rgba(0,0,0,.3);
-}
-
+ 
+ ul {
+     list-style-type: none;
+ }
+ /* Styles for media cards */
+ 
  .media ul {
-    padding: 0 1em;
-    margin: 0;
-}
-
-
-
-.medium img {
-    display: block;
-    margin: 0 auto;
-}
-
-
-/* changing hyperlink behaviors */ 
-
-/* mobile viewport */
-
-@media all and (max-width: 500px) {}
+     padding: 0 1em;
+     margin: 0;
+ }
+ 
+ .media h3,
+ .media p {
+     text-align: center;
+ }
+ 
+ .medium {
+     display: block;
+     background: #ffffff;
+     width: 18em;
+     margin: 0 auto 4em;
+ }
+ 
+ .medium p {
+     padding: 0;
+ }
+ 
+ .medium img {
+     display: block;
+     margin: 0 auto;
+ }
+ 
+ .medium a {
+     display: block;
+     text-decoration: none;
+     color: black;
+     padding-left: 2em;
+     padding-right: 2em;
+     padding-top: 2em;
+     border: solid 1px white;
+     box-shadow: 0 .2em .5em rgba(0, 0, 0, .3);
+ }
+ 
+ .medium a:hover {
+     box-shadow: 0 .2em 1em black;
+ }
+ /* changing hyperlink behaviors */
+ /* unvisited */
+ /* mobile viewport */
+ 
+ @media all and (min-width: 600px) {
+     .itsme {
+         width: 400px;
+         float: left;
+         margin-right: 1em;
+     }
+ }
+ 
+ @media all and (min-width: 800px) {
+     .media {
+         display: flex;
+         width: 700px;
+         margin-right: auto;
+         margin-left: auto;
+     }
+ }
