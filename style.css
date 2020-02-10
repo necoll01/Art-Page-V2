@@ -1,12 +1,14 @@
  /* General styling for all viewports */
  
  a:link {
-     color: #238b96;
+     color: darkblue;
+     text-decoration-line: solid;
  }
  /* visited */
  
  a:visited {
-     color: darkblue;
+     color: darkmagenta;
+     text-decoration-line: solid;
  }
  /* mouse over link */
  
@@ -16,7 +18,8 @@
  /* selected link */
  
  a:active {
-     color: #238b96;
+     color: darkblue;
+     text-decoration-line: solid;
  }
  
  header {
@@ -31,7 +34,7 @@
  }
  
  .resources a {
-     text-decoration-line: none;
+     text-decoration-line: solid;
  }
  
  .page-content {
@@ -51,6 +54,7 @@
  ul {
      list-style-type: none;
  }
+
  /* Styles for media cards */
  
  .media ul {
@@ -93,8 +97,7 @@
  .medium a:hover {
      box-shadow: 0 .2em 1em black;
  }
- /* changing hyperlink behaviors */
- /* unvisited */
+
  /* mobile viewport */
  
  @media all and (min-width: 600px) {
@@ -105,10 +108,29 @@
      }
  }
  
+ /* tablet viewport */
  @media all and (min-width: 800px) {
      .media {
          display: flex;
          width: 700px;
+         margin-right: auto;
+         margin-left: auto;
+     }
+ }
+
+ /* laptop viewport */
+ @media all and (min-width: 1000px) {
+     .media {
+         width: 900px;
+         margin-right: auto;
+         margin-left: auto;
+     }
+ }
+
+ /* desktop viewport */
+ @media all and (min-width: 1400) {
+     .media {
+         width: 1300px;
          margin-right: auto;
          margin-left: auto;
      }
