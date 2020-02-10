@@ -47,6 +47,10 @@
      font: normal 16px/1.5 Bookman;
  }
  
+ body.home {
+     background-image: url("pencilbg.png");
+ }
+ 
  img {
      max-width: 100%;
  }
@@ -54,7 +58,6 @@
  ul {
      list-style-type: none;
  }
-
  /* Styles for media cards */
  
  .media ul {
@@ -97,7 +100,6 @@
  .medium a:hover {
      box-shadow: 0 .2em 1em black;
  }
-
  /* mobile viewport */
  
  @media all and (min-width: 600px) {
@@ -107,31 +109,34 @@
          margin-right: 1em;
      }
  }
- 
  /* tablet viewport */
+ 
  @media all and (min-width: 800px) {
      .media {
          display: flex;
-         width: 700px;
+         max-width: 700px;
          margin-right: auto;
          margin-left: auto;
      }
  }
-
  /* laptop viewport */
+ 
  @media all and (min-width: 1000px) {
-     .media {
-         width: 900px;
+     .page-content {
+         /* font-size: calc(1em + .5vw); */
+         max-width: 75%;
+         max-width: 900px;
          margin-right: auto;
          margin-left: auto;
      }
  }
-
  /* desktop viewport */
- @media all and (min-width: 1400) {
-     .media {
-         width: 1300px;
-         margin-right: auto;
+ 
+ @media all and (min-width: 1400px) {
+     .page-content {
+         font-size: calc(1em + .25vw);
+         max-width: 75%;
          margin-left: auto;
+         margin-right: auto;
      }
  }
