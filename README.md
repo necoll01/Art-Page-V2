@@ -1,3 +1,3 @@
 # Art-Page-V2
 
-My first commit
+This is my art website for my portfolio.
