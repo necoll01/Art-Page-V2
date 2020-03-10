@@ -39,7 +39,7 @@
  /* Pencil Page Background */
  
  body.pencils {
-     background-image: url("pencilbg.png");
+     background-image: url("../Art-Page-V2/images/pencilbg.png");
  }
  
  .page-content {
@@ -56,7 +56,7 @@
  /* Homepage Background */
  
  body.home {
-     background-image: url("circles.png");
+     background-image: url("../Art-Page-V2/images/circles.png");
  }
  
  img {
