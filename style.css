@@ -108,6 +108,72 @@
  .medium a:hover {
      box-shadow: 0 .2em 1em black;
  }
+
+ /* Paint Color Boxes */
+ .colorgrid {
+     display: grid;
+     grid-template-columns: 50% 50%;
+     justify-content: center;
+ }
+ .colorgrid div {
+    padding: 2em;
+    margin: 1em;   
+ }
+
+ .paynes-grey
+ {
+     background-color:#404048;
+     color: white;
+     text-align: center;
+ }
+
+.black {
+    color: white;
+    background-color: black;
+    text-align: center;
+   
+}
+
+.titanium-white {
+    background-color: #ffffff;
+    text-align: center;
+   border-style: solid;
+   border-color: lightgray;
+}
+
+ .alizarin {
+    background-color: #e32636;
+    color: white;
+    text-align: center;
+}
+
+.cadmium-yellow
+{
+    text-align: center;
+    background-color: #fff600;
+}
+
+.ultramarine
+{
+
+    text-align: center;
+    background-color: #4166f5;
+    color: white;
+}
+.raw-umber {
+    text-align: center;
+    color: white;
+
+    background-color: #826644;
+}
+
+.phthalo {
+    color: white;
+    text-align: center;
+
+    background-color: #000f89;
+}
+
  /* mobile viewport */
  
  @media all and (min-width: 600px) {
